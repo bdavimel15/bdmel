@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💙AnaLu e Bruno💙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💙Para Minha Calopsita💙</h1>
+        <p>VOCÊ NESSE MOMENTO DEVE TA COM O SEU PRESENTE AAKAKAKAKAKAKAKA, ACHOU Q IA FICAR SEM FOI? EU TE AMO, MUITO MESMO. 
+Ai amor, to feliz, a gente está muitooo bem. Acredito que nesse momento vc esteja muito feliz. Muito obrigado por tudo, acredito que você ficou puta ontem comigo KAKAKAKAKAKAKAKAKAKAK, confesso que em uns momentos eu quase contei, eu te amo muito minha princesa. Te amo💙</p>
+
+        <!-- Fotos com descrição -->
+        <div class="foto-row">
+            <div class="foto-container">
+                <img src="luyze.jpg" alt="Foto 1" class="foto">
+                <p class="descricao">A gente no meu prrimeiro niver como namorados</p>
+            </div>
+            <div class="foto-container">
+                <img src="luyze1.jpg" alt="Foto 2" class="foto">
+                <p class="descricao">Nossa primeira viagem juntos</p>
+            </div>
+            <div class="foto-container">
+                <img src="luyze2.jpg" alt="Foto 3" class="foto">
+                <p class="descricao">O zoin q eu amo muitooo</p>
+            </div>
+        </div>
+        <div class="foto-row">
+            <div class="foto-container">
+                <img src="luyze3.jpg" alt="Foto 4" class="foto">
+                <p class="descricao">O aniversário de Estelinha, c lembra??</p>
+            </div>
+            <div class="foto-container">
+                <img src="luyze4.jpg" alt="Foto 5" class="foto">
+                <p class="descricao">Nossa primeira vez no cinema juntos, tu lembra bem?</p>
+            </div>
+            <div class="foto-container">
+                <img src="luyze5.jpg" alt="Foto 6" class="foto">
+                <p class="descricao">De novo o zoinho q eu amo muitao</p>
+            </div>
+        </div>
+
+        <!-- Botões de controle de música -->
+        <div class="controles-musica">
+            <button id="tocar-musica" class="botao-tocar">Tocar Música</button>
+            <button id="pausar-musica" class="botao-pausar">Pausar Música</button>
+        </div>
+
+        <!-- Música de fundo -->
+        <audio id="musica" loop>
+            <source src="comotudodeveser.mp3" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </div>
+
+    <script>
+        // Script para controlar a música
+        const musica = document.getElementById('musica');
+        const botaoTocar = document.getElementById('tocar-musica');
+        const botaoPausar = document.getElementById('pausar-musica');
+
+        botaoTocar.addEventListener('click', () => {
+            musica.play();
+        });
+
+        botaoPausar.addEventListener('click', () => {
+            musica.pause();
+        });
+    </script>
+</body>
+</html>
